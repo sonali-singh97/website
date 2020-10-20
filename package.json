@@ -1,0 +1,17 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "\"Developer students club website\"",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
