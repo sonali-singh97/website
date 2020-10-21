@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Open Sans";
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+///////////////////////////
+///     button
+.btn {
+    border: 1px solid black;
+    padding: 1.5rem 2rem;
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    color: black;
+}
