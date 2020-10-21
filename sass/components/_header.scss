@@ -11,7 +11,7 @@
     &__logo {
         width: 5rem;
         height: 5rem;
-        // background-color: #08003c;
+     background-color: #08003c;
     }
 
     &__org-name {
@@ -30,8 +30,24 @@
         -webkit-clip-path: polygon(0 0, 30% 0, 100% 50%, 30% 100%, 0 100%);
         width: 40%;
         height: 100%;
-        background-color: rgba(white, 0.2);
-        z-index: 5;
+        background: linear-gradient(300.47deg, #2A2457 -0.93%, #08003C 48.21%);
+        z-index: -1;
+    }
+
+    
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        animation: rotat 2s linear;
+        animation-iteration-count: infinite;
+        width: 20rem;
+        height: 20rem;
+        background: linear-gradient(210.51deg, #2A2457 -12.32%, #08003C 92%);
+        transform: translate(-50%, -50%) rotate(24.94deg);
+        z-index: -1;
     }
 }
 
@@ -40,10 +56,10 @@
     justify-content: space-around;
     padding: 5rem 0;
 
+
 }
 
 .user-nav {
-
     &__item {
         text-align: center;
         &:not(:last-child) {
@@ -55,17 +71,18 @@
         font-size: 1.5rem;
         display: inline-block;
         color: #6B6788;
+        font-weight: bolder;
     }
 }
 
 .chapter {
     text-align: center;
     padding: 2rem 0;
+    flex-basis: 40%;
     &__name {
         text-transform: uppercase;
         line-height: 32px;
         font-size: 2.2rem;
-        width: 50%;
         margin: auto;
         font-weight: 900;
         color: white;
@@ -73,17 +90,40 @@
     }
 }
 
+.dsc {
+    height: 20rem;
+    img {
+        display: inline-block;
+        height: 100%;
+    }
+}
+
 
 ///////////////////////////
 ///     button
 .btn {
-    border: 1px solid white;
-    border-radius: 25px;
+    border: 2px solid white;
+    border-radius: 10px;
     padding: 1rem 2.5rem;
     display: inline-block;
     font-size: 2rem;
+    font-weight: bolder;
     text-transform: uppercase;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     color: white;
-    font-weight: lighter;
+}
+
+@keyframes rotat {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-50%, -80%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+        
+    }
 }
