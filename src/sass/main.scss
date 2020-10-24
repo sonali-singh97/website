@@ -1,0 +1,15 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/_base";
+@import "base/_utilities";
+@import "base/_animations";
+@import "base/typography";
+
+@import "components/_header";
+@import "components/tech-card.scss";
+@import "components/buttons";
+
+//@import "layout/grids";
+
+@import "pages/home";

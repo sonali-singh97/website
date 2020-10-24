@@ -1,5 +1,8 @@
 .header {
-    padding: 0 1rem;
+    // padding: 0 1rem;
+    padding: 7rem 5rem;
+  
+    padding: 2rem ;
     background-color: #08003c;
     position: relative;
     z-index: 50;
@@ -24,13 +27,16 @@
     &:before {
         content: "";
         position: absolute;
-        top: 0;
-        left: 0;
-        clip-path: polygon(0 0, 30% 0, 100% 50%, 30% 100%, 0 100%);
-        -webkit-clip-path: polygon(0 0, 30% 0, 100% 50%, 30% 100%, 0 100%);
-        width: 40%;
-        height: 100%;
-        background: linear-gradient(300.47deg, #2A2457 -0.93%, #08003C 48.21%);
+        top: -5rem;
+        left: -10%;
+        // clip-path: polygon(0 0, 30% 0, 100% 50%, 30% 100%, 0 100%);
+        // -webkit-clip-path: polygon(0 0, 30% 0, 100% 50%, 30% 100%, 0 100%);
+
+        width: 60rem;
+        height: 60rem;
+        background: linear-gradient(300.47deg, #2A2457 -1%, #08003C 48.21%);
+        transform: rotate(-45deg);
+        border-radius: 5rem;
         z-index: -1;
     }
 
@@ -43,8 +49,8 @@
         border-radius: 50%;
         animation: rotat 2s linear;
         animation-iteration-count: infinite;
-        width: 20rem;
-        height: 20rem;
+        width: 30rem;
+        height: 30rem;
         background: linear-gradient(210.51deg, #2A2457 -12.32%, #08003C 92%);
         transform: translate(-50%, -50%) rotate(24.94deg);
         z-index: -1;
@@ -53,8 +59,8 @@
 
 .intro {
     display: flex;
-    justify-content: space-around;
-    padding: 5rem 0;
+    justify-content:space-between;
+    padding: 5rem ;
 
 
 }
@@ -68,7 +74,7 @@
     }
 
     &__link{
-        font-size: 1.5rem;
+        font-size: 2rem;
         display: inline-block;
         color: #6B6788;
         font-weight: bolder;
@@ -78,11 +84,15 @@
 .chapter {
     text-align: center;
     padding: 2rem 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     flex-basis: 40%;
     &__name {
         text-transform: uppercase;
-        line-height: 32px;
-        font-size: 2.2rem;
+        line-height: auto;
+        font-size: 5rem;
         margin: auto;
         font-weight: 900;
         color: white;
@@ -91,10 +101,10 @@
 }
 
 .dsc {
-    height: 20rem;
+    // height: 20rem;
     img {
         display: inline-block;
-        height: 100%;
+        // height: 100%;
     }
 }
 

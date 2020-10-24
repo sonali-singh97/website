@@ -4,14 +4,22 @@
   "description": "\"Developer students club website\"",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "node-sass sass/main.scss css/styles.css -w"
+    "dev": "rm -rf ./development && rm -rf ./.cache && parcel public/index.html --out-dir development -p 8000",
+    "build": "parcel build public/index.html --out-dir dist --public-url ./",
+    "compile-sass": "node-sass src/sass/main.scss css/styles.css -w"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/runtime-corejs2": "^7.12.1",
+    "node-sass": "^4.14.1",
+    "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "components": "^0.1.0",
     "live-server": "^1.2.1"
   }
 }
