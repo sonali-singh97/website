@@ -1,8 +1,12 @@
 .tech-section{
- position:relative; 
+ position: relative;
 background-color: #F9F9F9 ;
-margin: 3rem 0;
-padding: 5rem;
+margin: 5rem  0;
+padding: 7rem 5rem;
+display: flex;
+	align-items: left;
+	//justify-content: center;
+	flex-direction: column;
 
 .tech-heading{
     position: absolute;
@@ -10,4 +14,10 @@ padding: 5rem;
     left: 5rem;
 }
 
+}
+
+.info-section{
+   margin: 3rem  5rem;
+   padding:7rem;
+  
 }

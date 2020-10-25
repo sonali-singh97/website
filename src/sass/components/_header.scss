@@ -6,19 +6,32 @@
     background-color: #08003c;
     position: relative;
     z-index: 50;
+
+    &-background__square{
+        position:absolute;
+        top:-50%;
+        right: 0;
+        width: 50%;
+        height: 60%;
+        background: linear-gradient(300.47deg, #2A2457 -0.93%, #08003C 48.21%);
+        transform: rotate(50deg);
+        border-radius: 5rem;
+        z-index: -1;
+
+    }
     &__logo-box {
         display: flex;
         align-items: center;
     }
 
     &__logo {
-        width: 5rem;
-        height: 5rem;
-     background-color: #08003c;
+         width: 10rem;
+         height: 4rem;
+     
     }
 
     &__org-name {
-        font-size: 1.8rem;
+        font-size: 3rem;
         font-weight: 900;
         margin-left: 1rem;
         color: white;
@@ -66,18 +79,26 @@
 }
 
 .user-nav {
+    margin-top: 4%;
     &__item {
         text-align: center;
         &:not(:last-child) {
-            margin-bottom: 2rem;
+            margin-bottom: 5rem;
         }
     }
 
     &__link{
-        font-size: 2rem;
+        font-size: 2.2rem;
+      
         display: inline-block;
         color: #6B6788;
-        font-weight: bolder;
+        font-weight: bold;
+
+        &:hover {
+color:#fff;
+        }
+
+       
     }
 }
 
