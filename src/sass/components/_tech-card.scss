@@ -1,100 +1,82 @@
-$highlight:blue;
+.tech-card{
+	position: relative;
+	text-align: center;
+	box-shadow: 0 10px 30px -15px rgba(0,0,0,.2);
+	border-radius: 10px;
+	padding:2rem;
+	height: 30rem;
+	line-height: 1.7;
+	i{  
+		font-size: 6rem;
+		background: linear-gradient(to right , #EA4335, #4285F4, #34A853);
+		-webkit-background-clip: text;
+		color: transparent;
+	}
 
-
-.cards-container{
-	width: 108rem;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	flex-flow: wrap;
-   
-
-	.card{
+	&__border{
+		position: absolute;
+		bottom: 0;
+		left:0;
+		width: 100%;
+		border-radius: 0 0 10px 10px;
 		
-		text-align: center;
-		font-weight: bold;
-		position: relative;
-		width: 30rem;
-		margin:30px;
-		border-radius: 2px;
-		box-shadow: 0 20px 10px rgba(0, 0, 0, 0.233);
-	
+		height: 1rem;
+	}
 
-		.card-content {
+	&:hover{
+		transform: translateY(-1rem);
+		box-shadow: 0 20px 40px -5px rgba(0,0,0,.2); ;
+	}
+}
 
-			padding: 30px;
-			width: 100%;
-			height: 300px;
-			border: 1px solid gray;
-			background: white;
-			text-decoration: none;
-			color: black;
-			display: block;
-			transition: 0.25s ease;
-			
-			
-			&:hover {
-				transform: translate(-30px, -30px);
-				border-color: $highlight;
-				border-width: 4px;
-				
-				.card--display {
-					display: none;
-				}
-				
-				.card--hover {
-					display: block;
-				}
+.cards-row{
+	&-1 {
+		
+		.tech-card {
+         line-height: 2;
+
+			&__border{
+				background-color:  #4285F4 ;
 			}
 			
-			.card--display {
-				i {
-					font-size: 60px;
-					margin-top: 200px;
-				}
+			.btn-text:hover{
+				background-color: #4285F4;
 				
-				h3 {
-					margin: 20px 0 0;
-				}
-			}
 			
-			.card--hover {
-				display: none;
-				
-				h3 {
-					margin: 20px 0;
-					
-				}
-				
-				p {
-					font-weight: normal;
-					line-height: 1.5;
-					padding: 1rem;
-					// &.link {
-					// 	margin: 20px 0 0;
-					// 	font-weight: bold;
-					// 	color: $highlight;
-					// }
-				}
 			}
 		}
 		
-	
+	}
+
+	&-2 {
+		.tech-card__border{
+			background-color:  #EA4335 ;
+		}
+
+		.btn-text:hover{
+			background-color:#EA4335;
+			
 		
+		}
+	}
+
+	&-3 {
+		
+		.tech-card{
+		      
+			// position: absolute;
+			// left: 50%;
+			// transform : translateX(-50%);
+			display: inline-block;
+			&__border{
+				background-color: #34A853 ;
+			}
+			.btn-text:hover{
+				background-color: #34A853;
+				
+			
+			}
+		}
 		
 	}
 }
-		
-
-	.card--border {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0;
-		border: 2px dashed gray;
-		//background-image: repeating-linear-gradient(-24deg,transparent,transparent 4px,gray 0, gray 5px);
-		z-index: -1;
-		
-	}
-

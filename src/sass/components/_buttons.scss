@@ -1,7 +1,16 @@
 .btn-text{
-font-size: 1.8rem;
+    display: inline-block;
+font-size: 1.6rem;
+margin-top: 1rem;
+text-decoration: underline;
+
+
+
+&:hover{
+    background-color: #4285F4;
+    color: #fff;
+  box-shadow: 0 10px 30px  rgba(0,0,0,.2);
+  font-weight: 500;
 
 }
-.btn-blue {
-    color: blue;
 }

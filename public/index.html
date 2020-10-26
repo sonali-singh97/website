@@ -3,21 +3,25 @@
   <title>DSC UIET KUK</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <link
+  <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
     rel="stylesheet"
-  /> -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  />
+  
 
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+  <link rel="stylesheet" href="../css/font/flaticon.css">
   <link rel="stylesheet" type="text/css" href="../css/styles.css" />
 </head>
 <body>
   <header class="header">
     <div class="header__logo-box">
-      <img src="../src/img/dsc-logo.svg" class="header__logo" alt="logo" />
-      <p class="header__org-name">DSC UIET</p>
+      <img src="../src/img/logo.png" class="header__logo" alt="logo" />
+      <h2 class="header__org-name">DSC UIET</h2>
     </div>
+    <div class="header-background__square">
+      &nbsp;
+   </div>
     <span></span>
     <div class="intro">
       <nav class="user-nav">
@@ -31,9 +35,7 @@
           <li class="user-nav__item">
             <a href="#" class="user-nav__link">Events</a>
           </li>
-          <li class="user-nav__item">
-            <a href="#" class="user-nav__link">Technologies</a>
-          </li>
+         
           <li class="user-nav__item">
             <a href="#" class="user-nav__link">FAQ</a>
           </li>
@@ -55,169 +57,159 @@
   </header>
 
   <main>
+
+    <!-- about section -->
+  <section class='info-section'>
+    <div class="info-container">
+ 
+    <a href="https://youtu.be/qWrc2blCWUo" class="info__img" >
+   <img src="../src/img/DSC-video.png" alt="dsc">
+   <div class="play-btn">
+     <i class ="flaticon-play"></i> 
+    </div> 
+  </a>
+  
+   <div class='details'>
+   <div class="info__details">
+      <h2 class='heading-secondary'> why DSC?</h2>
+     <p class="info__para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse tenetur odit aliquam veritatis
+   quis ipsum quisquam quidem qui blanditiis? Illo quas dicta sit numquam sunt voluptas, maxime doloribus accusantium.</p>
+  </div>
+  </div> 
+ 
+   </div>
+ 
+  </section>
+  
+  
+  <!-- Technology setion -->
+
     <section class="tech-section">
       <div  class="tech-heading"> 
         <h2 class="heading-secondary">  Technologies we support</h2>
       </div>
   
-        <div class="cards-container">
-
-        
-            <div class="card"> 
-            <div class="card-content">
-              <div class="card--display">
-                <i></i>
-                <h3>Cloud computing</h3>
-                
-              </div>
-              <div class="card--hover">
-                <h3>Tech lead</h3>
-                <p class="description">
-                  Sakshi Tomar
-                </p>
-                <a href="#" class="btn-blue btn-text "> learn more</a>
-              </div>
-            </div>
-          
-            <div class="card--border"></div>
-          </div>
-       
-
-       
-          <div class="card"> 
-          <div class="card-content">
-            <div class="card--display">
-              <i></i>
-              <h3>Competitive programming</h3>
-              
-            </div>
-            <div class="card--hover">
-              <h3>Tech lead</h3>
-              <p class="description">
-                Gaurav
-              </p>
-              <a href="#" class="btn-blue btn-text"> learn more</a>
-            </div>
-          </div>
-        
-          <div class="card--border"></div>
-        </div>
       
+        
 
-   
-        <div class="card"> 
-        <div class="card-content">
-          <div class="card--display">
-            <i></i>
-            <h3>Cyber security</h3>
+        <div class="row cards-row-1">
+          <div class='col-1-of-3'>
+            <div class="tech-card">
+            <i class="flaticon-cloud-computing"> </i>
+            <h3>Cloud Computing</h3>
+           
+            <p>Sakshi Tomar</p>
+          
+
+            <a href="#" class="btn-text" >Learn more</a>
+            <div class="tech-card__border">
+               &nbsp;
+            </div>
+          </div>
+
+          </div>
+
+          <div class='col-1-of-3'>
+            <div class="tech-card">
+            <i class="flaticon-analysis"> </i>
+            <h3>Data Analysis</h3>
             
+            <p>Rushil</p>
+         
+
+            <a href="#" class="btn-text" >Learn more</a>
+            <div class="tech-card__border">
+               &nbsp;
+            </div>
           </div>
-          <div class="card--hover">
-            <h3>Tech lead</h3>
-            <p class="description">
-              Pratyush
-            </p>
-            <a href="#" class="btn-blue btn-text"> learn more</a>
+
+          </div>
+
+          <div class='col-1-of-3'>
+            <div class="tech-card">
+            <i class="flaticon-shield"> </i>
+            <h3>Cybersecurity</h3>
+           
+            <p>Pratyush</p>
+         
+            <a href="#" class="btn-text" >Learn more</a>
+            <div class="tech-card__border">
+               &nbsp;
+            </div>
+          </div>
+
           </div>
         </div>
-      
-        <div class="card--border"></div>
-      </div>
-   
 
+        <div class="row cards-row-2">
+          <div class='col-1-of-3'>
+            <div class="tech-card">
+            <i class="flaticon-android-logo"> </i>
+            <h3>Android Development</h3>
+           
+            <p>Atin Garg</p>
+            <p>Piyush</p>
 
- 
-      <div class="card"> 
-      <div class="card-content">
-        <div class="card--display">
-          <i></i>
-          <h3>Android development</h3>
-          
+            <a href="#" class="btn-text" >Learn more</a>
+            <div class="tech-card__border">
+               &nbsp;
+            </div>
+          </div>
+
+          </div>
+
+          <div class='col-1-of-3'>
+            <div class="tech-card">
+            <i class="flaticon-web-development"> </i>
+            <h3>Web Development</h3>
+            
+            <p>Himanshu Arora</p>
+            <p>Sonali Singh</p>
+
+            <a href="#" class="btn-text" >Learn more</a>
+            <div class="tech-card__border">
+               &nbsp;
+            </div>
+          </div>
+
+          </div>
+
+          <div class='col-1-of-3'>
+            <div class="tech-card">
+            <i class="flaticon-learning"> </i>
+            <h3>Machine Learning</h3>
+           
+            <p>Prateek</p>
+            <p>Lovish</p>
+            <a href="#" class="btn-text" >Learn more</a>
+            <div class="tech-card__border">
+               &nbsp;
+            </div>
+          </div>
+
+          </div>
         </div>
-        <div class="card--hover">
-          <h3>Tech lead</h3>
-          <p class="description">
-            Piyush
-            Atin
-          </p>
-          <a href="#" class="btn-blue btn-text"> learn more</a>
+
+        <div class="row cards-row-3">
+          <div class='col-1-of-3'>
+            <div class="tech-card">
+            <i class="flaticon-coding"> </i>
+            <h3>Competitive Programming</h3>
+           
+            <p>Gaurav</p>
+            
+
+            <a href="#" class="btn-text" >Learn more</a>
+            <div class="tech-card__border">
+               &nbsp;
+            </div>
+          </div>
+
+          </div>
+
+       
         </div>
-      </div>
-    
-      <div class="card--border"></div>
-    </div>
-  
-    <div class="card"> 
-    <div class="card-content">
-      <div class="card--display">
-        <i></i>
-        <h3>Web development</h3>
-        
-      </div>
-      <div class="card--hover">
-        <h3>Tech lead</h3>
-        <p class="description">
-          Himanshu Arora
-          Sonali Singh
-        </p>
-        <a href="#" class="btn-blue btn-text"> learn more</a>
-      </div>
-    </div>
-  
-    <div class="card--border"></div>
-  </div>
-
-
-
-  <div class="card"> 
-  <div class="card-content">
-    <div class="card--display">
-      <i></i>
-      <h3>Machine learning</h3>
-      
-    </div>
-    <div class="card--hover">
-      <h3>Tech lead</h3>
-      <p class="description">
-        Prateek
-        Lovish
-      </p>
-      <a href="#" class="btn-blue btn-text"> learn more</a>
-    </div>
-  </div>
-
-  <div class="card--border"></div>
-</div>
-
-
-
-
-
-  <div class="card"> 
-  <div class="card-content">
-    <div class="card--display">
-      <i></i>
-      <h3>Data analysis</h3>
-      
-    </div>
-    <div class="card--hover">
-      <h3>Tech lead</h3>
-      <p class="description">
-        Rushil
-      </p>
-      <a href="#" class="btn-blue btn-text"> learn more</a>
-    </div>
-  </div>
-
-  <div class="card--border"></div>
-</div>
-
-
-</div>
-        
-
-        
-      
      
     </section>
   </main>
