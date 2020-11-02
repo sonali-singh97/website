@@ -1,3 +1,4 @@
+
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
@@ -10,6 +11,14 @@
 @import "components/tech-card.scss";
 @import "components/buttons";
 @import "components/info";
+@import "components/header2";
+@import "components/header-3";
+@import "components/event-card";
+
 @import "layout/grids";
 
 @import "pages/home";
+@import "pages/events";
+@import "pages/event";
+@import "pages/faq";
+@import "pages/contact";

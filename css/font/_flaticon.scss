@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 24/10/2020 14:42
+    Creation date: 02/11/2020 13:47
     */
 
     @font-face {
@@ -46,6 +46,12 @@
 .flaticon-android-logo:before { content: "\f106"; }
 .flaticon-web-development:before { content: "\f107"; }
 .flaticon-shield:before { content: "\f108"; }
+.flaticon-plus:before { content: "\f109"; }
+.flaticon-negative-sign-button:before { content: "\f10a"; }
+.flaticon-instagram:before { content: "\f10b"; }
+.flaticon-twitter:before { content: "\f10c"; }
+.flaticon-linkedin:before { content: "\f10d"; }
+.flaticon-facebook:before { content: "\f10e"; }
     
     $font-Flaticon-play: "\f100";
     $font-Flaticon-cloud-computing: "\f101";
@@ -56,3 +62,9 @@
     $font-Flaticon-android-logo: "\f106";
     $font-Flaticon-web-development: "\f107";
     $font-Flaticon-shield: "\f108";
+    $font-Flaticon-plus: "\f109";
+    $font-Flaticon-negative-sign-button: "\f10a";
+    $font-Flaticon-instagram: "\f10b";
+    $font-Flaticon-twitter: "\f10c";
+    $font-Flaticon-linkedin: "\f10d";
+    $font-Flaticon-facebook: "\f10e";

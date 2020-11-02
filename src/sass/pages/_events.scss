@@ -1,0 +1,26 @@
+.events{
+   &-heading {
+       margin: 10rem  ;
+       text-align: center;
+    h3{
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 1.2;
+    } 
+}
+
+    &-illustration{
+        width:116rem;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    
+}
+
+.past-events , .upcoming-events{
+    background:linear-gradient(transparent 50% , #f9f9f9 50%);
+    margin: 5rem  0;  
+   padding: 8rem 5rem;
+}
