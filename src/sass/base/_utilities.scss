@@ -1,3 +1,16 @@
 .active {
     color: white !important; 
 }
+.break-line {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    height: 1px;
+    margin-top: 5rem;
+}
+.rotate-left{
+    transform: rotate(-90deg);
+}
+.rotate-right{
+    transform: rotate(90deg);
+}

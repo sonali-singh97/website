@@ -1,0 +1,53 @@
+.footer {
+    padding: 8rem 5rem; 
+    // background: linear-gradient(to right bottom, #2A2457 , #08003C );
+    margin-top: 10rem;
+    background-color: #08051A;
+
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+
+    &__link:visited, &__link:link {
+        font-size: 1.5rem;
+        display: inline-block;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 400;
+    }
+
+    &__link:hover {
+        color: #6B6788;
+    }
+}
+
+.footer__paragraph {
+    font-size: 1.5rem;
+    text-align-last: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 4rem;
+    color: white;
+}
+
+.contact {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    &__link {
+        font-size: 1.5rem;
+        width: 5rem;
+        height: 3rem;
+        fill: white;
+        cursor: pointer;
+        transition: transform .4s;
+       // border: 1px solid red;
+
+    }
+
+    &__link:hover {
+        transform: translateY(-5px);
+    }
+} 

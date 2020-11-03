@@ -23,4 +23,62 @@
     background:linear-gradient(transparent 50% , #f9f9f9 50%);
     margin: 5rem  0;  
    padding: 8rem 5rem;
+   position:relative;
+  // overflow: hidden;
+  
+}
+
+.upcoming-events{
+    &__bg{
+    position:absolute;
+    top:60%;
+   right:0;
+    width:30rem;
+    height:50rem;
+   // background-color:#f4f4f4;
+    //opacity:0.5;
+
+  overflow: hidden;
+  img{
+   background: fill;
+  }
+  
+}
+
+&__heading{
+    position:absolute;
+    top:40%;
+    left:0;
+
+    &::after{
+        content:"";
+        position:absolute;
+        width:50%;
+       bottom:-8rem;
+        height: 5px;
+    left:18%;
+    transform:  rotate(-90deg);
+       background-color: #1A73E8;
+     }
+}
+}
+
+.past-events{
+
+&__heading{
+    position:absolute;
+    top:40%;
+    right:0;
+
+    &::after{
+        content:"";
+        position:absolute;
+        width:50%;
+       top:-5rem;
+        height: 5px;
+    right:3rem;
+    transform:  rotate(-90deg);
+       background-color: #1A73E8;
+     }
+}
 }

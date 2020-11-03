@@ -1,5 +1,6 @@
 
-  .faq-container{
+  .section-faq{
+
       .faq-illustration{
           float: left;
           width: 50%;
@@ -8,10 +9,15 @@
               max-width: 100%;
           }
       }
+
+
+      .faq-container{
+        margin: 10rem ;
+      }
   }
    .accordion {
-    width: 90%;
-    max-width: 1000px;
+   // width: 100%;
+   // max-width: 1000px;
     margin: 2rem auto;
   }
 
