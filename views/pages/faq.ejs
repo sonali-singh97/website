@@ -7,18 +7,16 @@
     , initial-scale=1.0"
     />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"
-    />
-    <link rel="stylesheet" href="../css/font/flaticon.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="/css/font/flaticon.css">
+    <link rel="stylesheet" href="/css/aos.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <header class="header-2">
       <div class="header__logo-box">
-        <img src="../src/img/logo.png" class="header__logo" alt="logo" />
-        <h2 class="header__org-name">DSC UIET</h2>
+        <img src="/images/logo.png" class="header__logo" alt="logo" />
+        <h2 class="header__org-name">Developer Students Club</h2>
       </div>
      
    
@@ -26,41 +24,44 @@
         <nav class="user-nav">
           <ul class="user-nav__list">
             <li class="user-nav__item">
-              <a href="./index.html" class="user-nav__link">Home</a>
+              <a href="/" class="user-nav__link">Home</a>
             </li>
             <li class="user-nav__item">
-              <a href="#" class="user-nav__link">About</a>
+              <a href="/about" class="user-nav__link">About</a>
             </li>
             <li class="user-nav__item">
-              <a href="./events.html" class="user-nav__link">Events</a>
+              <a href="/events" class="user-nav__link">Events</a>
             </li>
 
             <li class="user-nav__item">
-              <a href="#" class="user-nav__link active">FAQ</a>
+              <a href="/faq" class="user-nav__link active">FAQ</a>
             </li>
             <li class="user-nav__item">
-              <a href="./contact.html" class="user-nav__link">Contact us</a>
+              <a href="/contact" class="user-nav__link">Contact us</a>
             </li>
           </ul>
         </nav>
         <div class="header-2__img">
-          <img src="../src/img/event-img.png" alt="event" />
+          <img src="/images/undraw_Questions_re_1fy7.svg" alt="event" />
         </div>
       </div>
 
-      <div class="header__gif-1">
+      <!-- <div class="header__gif-1">
    <img src="../src/img/d04d34c8a3d532c9a0d53396744c7d04.gif" alt="">
-      </div>
+      </div> -->
     </header>
     <main>
+  
       <section class="section-faq">
        
-            <div  data-aos="fade-up" class=" faq-illustration">
-                <img src="../src/img/undraw_Questions_re_1fy7.svg" alt="">
-            </div>
-           
-            <div  data-aos="fade-up" class="faq-container">
-          <div class="accordion">
+            <!-- <div  data-aos="fade-up" class=" faq-illustration">
+                <img src="/images/undraw_Questions_re_1fy7.svg" alt="">
+            </div> -->
+            <div data-aos="fade-up" class="faq-heading">
+              <h2 class="heading-secondary">Frequently Asked Questions</h2> 
+             </div>
+            <div  class="faq-container">
+          <div   data-aos="fade-up"class="accordion">
             <!-- question1 -->
             <div class="accordion-item">
               <div class="accordion-item__ques">
@@ -77,7 +78,7 @@
           </div>
 
           <!-- question-2 -->
-          <div class="accordion">
+          <div  data-aos="fade-up" class="accordion">
             <div class="accordion-item">
               <div class="accordion-item__ques">
                 Q. I only know C++. Can I still get useful stuff in DSC ?
@@ -96,7 +97,7 @@
           </div>
 
           <!-- question-3 -->
-          <div class="accordion">
+          <div  data-aos="fade-up" class="accordion">
             <div class="accordion-item">
               <div class="accordion-item__ques">
                 Q. Will I get access to events without registering an event
@@ -113,7 +114,7 @@
           </div>
 
           <!-- question-4 -->
-          <div class="accordion">
+          <div  data-aos="fade-up" class="accordion">
             <div class="accordion-item">
               <div class="accordion-item__ques">
                 Q. Need to fill the form everytime we join an event ?
@@ -130,7 +131,7 @@
           </div>
 
           <!-- question-5 -->
-          <div class="accordion">
+          <div  data-aos="fade-up" class="accordion">
             <div class="accordion-item">
               <div class="accordion-item__ques">
                 Q. Whether the certificates will be provided for every tech
@@ -146,7 +147,7 @@
             </div>
           </div>
 
-          <div class="accordion">
+          <div  data-aos="fade-up" class="accordion">
             <div class="accordion-item">
               <div class="accordion-item__ques">
                 Q. Whether DSC will help in our academia syllabus?
@@ -163,7 +164,7 @@
             </div>
           </div>
 
-          <div class="accordion">
+          <div  data-aos="fade-up" class="accordion">
             <div class="accordion-item">
               <div class="accordion-item__ques">
                 Q. Whether DSC will help in some fixed particular tech stack or
@@ -181,7 +182,7 @@
             </div>
           </div>
 
-          <div class="accordion">
+          <div  data-aos="fade-up" class="accordion">
             <div class="accordion-item">
               <div class="accordion-item__ques">
                 Q. Is it for only CSE and ECE students only?
@@ -196,7 +197,7 @@
             </div>
           </div>
 
-          <div class="accordion">
+          <div  data-aos="fade-up" class="accordion">
             <div class="accordion-item">
               <div class="accordion-item__ques">
                 Q. What are the pre requirements to be a member of DSC, whether
@@ -218,7 +219,5 @@
      
       </section>
       
-    </main>
-    <script src="../src/js/events.js"></script>
-  </body>
-</html>
+   
+      <%-include("../partials/footer.ejs")%>

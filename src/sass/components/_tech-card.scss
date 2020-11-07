@@ -4,7 +4,7 @@
 	box-shadow: 0 10px 30px -15px rgba(0,0,0,.2);
 	border-radius: 10px;
 	padding:2rem;
-	height: 30rem;
+	height: 38rem;
 	line-height: 1.7;
 	i{  
 		font-size: 6rem;
@@ -36,11 +36,11 @@
          line-height: 2;
 
 			&__border{
-				background-color:  #4285F4 ;
+				background-color:  #4286f4e3 ;
 			}
 			
 			.btn-text:hover{
-				background-color: #4285F4;
+				background-color: #4285F4e3;
 				
 			
 			}
@@ -50,18 +50,20 @@
 
 	&-2 {
 		.tech-card__border{
-			background-color:  #EA4335 ;
+			background-color:  #EA4335e1 ;
 		}
 
 		.btn-text:hover{
-			background-color:#EA4335;
+			background-color:#ea4435e1;
 			
 		
 		}
 	}
 
 	&-3 {
-		
+		.col-1-of-3{
+			margin-left:50%;
+			transform: translateX(-50%);
 		.tech-card{
 		      
 			// position: absolute;
@@ -69,14 +71,15 @@
 			// transform : translateX(-50%);
 			display: inline-block;
 			&__border{
-				background-color: #34A853 ;
+				background-color: #34a853da ;
 			}
 			.btn-text:hover{
-				background-color: #34A853;
+				background-color: #34a853ce;
 				
 			
 			}
 		}
+	}
 		
 	}
 }

@@ -1,0 +1,73 @@
+.about-section {
+    padding: 5rem 0;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-around;
+
+    //for svg
+    position: relative;
+}
+
+.team-section {
+    padding: 5rem 0;
+
+   .profile > * {
+       flex-basis: calc(33.33%);
+       box-shadow: none;
+       margin-bottom: 5rem;
+
+       img {
+           border-radius: 50%;
+           height: 25rem;
+       }
+   }
+
+   .profile__link {
+    //    box-shadow: 0 0 10px #524d77;
+       background-color: #e6e6ec;
+       padding: 10px 0;
+       border-radius: 25px;
+       &:not(:last-child) {
+           margin-right: 5px;
+       }
+   }
+
+
+}
+
+.mentors-section {
+    position: relative;
+}
+
+.right__pen {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 15rem;
+    height: 5rem;
+
+    &-icon {
+        fill: #080808;
+    }
+}
+
+.left__pen {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    width: 15rem;
+    height: 5rem;
+    transform: rotate(180deg);
+    
+    &-icon {
+        fill: #080808;
+    }
+}
+
+.about__svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    fill:#08003c;
+}

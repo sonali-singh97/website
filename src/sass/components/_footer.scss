@@ -11,7 +11,7 @@
     justify-content: space-between;
 
     &__link:visited, &__link:link {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         display: inline-block;
         text-transform: uppercase;
         color: white;
@@ -34,20 +34,24 @@
 
 .contact {
     margin-top: 5rem;
-    display: flex;
-    justify-content: center;
+    &-box {
+        display: flex;
+        justify-content: center;
+    }
     &__link {
-        font-size: 1.5rem;
+        cursor: pointer;
+        transition: transform .4s;
+        
+    }
+
+    &__icon {
+        font-size: 2rem;
         width: 5rem;
         height: 3rem;
         fill: white;
-        cursor: pointer;
-        transition: transform .4s;
-       // border: 1px solid red;
-
     }
 
     &__link:hover {
         transform: translateY(-5px);
     }
-} 
+}
