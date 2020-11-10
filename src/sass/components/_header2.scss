@@ -14,26 +14,34 @@ overflow: hidden;
       opacity:0.12;
       object-fit: fill;
 }
-      .header__gif-1{
-        top:-30%;
-        right:15%;
+  
 
+      .flaticon-plus-symbol-button {
+          font-size: 20rem;
+          color:#2A2457;
+          position: absolute;
+          right:-2%;
+          top:1rem;
+        
       }
-
-    //   .header__gif-2{
-    //       bottom:40%;
-    //       right:20%;
-    //   }
-
+     
+   
+    .plus-2{
+        font-size: 5rem;
+        position: absolute;
+        transform:rotate(45deg);
+        bottom:20%;
+        right:9%;
+        color:  #4285F4;
+        animation:bounce 2s linear infinite;
+    }
 
     &:before {
         content: "";
         position: absolute;
         top: -5rem;
         left: -10%;
-        // clip-path: polygon(0 0, 30% 0, 100% 50%, 30% 100%, 0 100%);
-        // -webkit-clip-path: polygon(0 0, 30% 0, 100% 50%, 30% 100%, 0 100%);
-
+        
         width: 60rem;
         height: 60rem;
         background: linear-gradient(to left top, #2A2457  , #08003C 50%);
@@ -53,7 +61,7 @@ overflow: hidden;
  
     margin-top: -5rem;
     margin-right: 10rem;
-    flex-basis: 60%;
+    flex-basis: 50%;
     
     img{
         max-width: 100%;
@@ -68,7 +76,7 @@ overflow: hidden;
     bottom: -10%;
     left: 40%;
     border-radius: 50%;
-    animation: displace 2s linear;
+    animation: round 2s linear;
     animation-iteration-count: infinite;
     width: 30rem;
     height: 30rem;

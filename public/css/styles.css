@@ -378,9 +378,20 @@ p {
     z-index: -1;
     opacity: 0.12;
     object-fit: fill; }
-  .header-2 .header__gif-1 {
-    top: -30%;
-    right: 15%; }
+  .header-2 .flaticon-plus-symbol-button {
+    font-size: 20rem;
+    color: #2A2457;
+    position: absolute;
+    right: -2%;
+    top: 1rem; }
+  .header-2 .plus-2 {
+    font-size: 5rem;
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: 20%;
+    right: 9%;
+    color: #4285F4;
+    animation: bounce 2s linear infinite; }
   .header-2:before {
     content: "";
     position: absolute;
@@ -395,7 +406,7 @@ p {
   .header-2__img {
     margin-top: -5rem;
     margin-right: 10rem;
-    flex-basis: 60%; }
+    flex-basis: 50%; }
     .header-2__img img {
       max-width: 100%; }
   .header-2:after {
@@ -404,7 +415,7 @@ p {
     bottom: -10%;
     left: 40%;
     border-radius: 50%;
-    animation: displace 2s linear;
+    animation: round 2s linear;
     animation-iteration-count: infinite;
     width: 30rem;
     height: 30rem;
@@ -960,12 +971,8 @@ p {
   padding-top: 5rem;
   display: flex;
   justify-content: space-evenly; }
-  .section-form .form__info .doodle-1 {
-    font-size: 6rem;
-    color: #EA4335; }
-  .section-form .form__info .doodle-2 {
-    font-size: 6rem;
-    color: #FBBC04; }
+  .section-form .form__info img {
+    max-width: 80%; }
   .section-form .contact-us {
     background: #fff;
     padding: 50px 100px;
