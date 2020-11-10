@@ -13,6 +13,8 @@ database.connect(function(err) {
   console.log('Database is connected successfully !');
 });
 
+
+
 app.set('view engine ' , 'ejs');
 app.use(express.static(__dirname + '/public'));
 
@@ -28,8 +30,18 @@ app.get("/about", function (req, res) {
 	res.render("pages/about.ejs");
 });
 
+//CREATE TABLE
 app.get("/events", function (req, res) {
-	res.render("pages/events.ejs");
+  let sql ="SELECT image,Date(date), event_name , event_info FROM pastEvents  ORDER BY Date(date) DESC";
+  database.query(sql ,(error, results)=>
+  {
+    if(error)
+    throw error;
+    console.log(results);
+  res.render("pages/events.ejs",{results: results});
+  }
+  )
+
 });
 
 app.get("/event", function (req, res) {

@@ -298,17 +298,19 @@
         <img src="/images/event-photo.svg" alt="">
       </div>
       <section data-aos="fade-up" class="past-events">
-
+        
+        <div data-aos="fade-left" class="past-events__bg">
+          <img src="/images/screen_3x.webp" alt="">
+        </div> 
        <!-- <img src="../src/img/circle.svg" alt=""> -->
         <div class="past-events__heading">
-          <h2 class="heading-secondary rotate-right">Past events</h2>
+          <h2 class="heading-secondary rotate-left">Past events</h2>
         </div>
         <div class=" row cards">
 
-          <div  class="carousel" data-flickity='{ "cellAlign": "left","freeScroll": true ,"prevNextButtons": false}'>
+          <div  class="carousel" data-flickity='{ "cellAlign": "left","freeScroll": true ,"prevNextButtons": true}'>
          
-            <!-- card 1 -->
-
+<!-- 
           <div class="col-1-of-3">
             <div  class="carousel-cell">
           <div class="event-card">
@@ -345,7 +347,7 @@
         </div>
 
 
-        <!-- card-2 -->
+      
         <div class="col-1-of-3">
           <div  class="carousel-cell">
           <div class="event-card">
@@ -381,7 +383,6 @@
         </div>
 
 
-        <!-- card-3 -->
         <div class="col-1-of-3">
           <div  class="carousel-cell">
           <div class="event-card">
@@ -417,8 +418,7 @@
           </div>
         </div>                                                                                                                                                                                                
 
-<!-- 
-        card-4 -->
+
         <div class="col-1-of-3">
           <div  class="carousel-cell">
           <div class="event-card">
@@ -488,47 +488,59 @@
             </div>
           </div>
           </div>
-        </div>                                                                                                                                                                                                
+        </div>                                                                                                                                                                                                 -->
 
 
-        <div class="col-1-of-3">
-          <div  class="carousel-cell">
-          <div class="event-card">
-            <div class="date">
-              <span class="card-date-day">10</span>
-              <span class="card-date-month">OCT</span>
-            </div>
-            <div class="event-card__image-holder">
-              <img class="event-card__image" src="/images/events.svg" alt="wave" />
-            </div>
-            <div class="event-title">
-              <a href="#" class="toggle-info card-btn">
-                <span class="left"></span>
-                <span class="right"></span>
-              </a>
-              <h3>
-                  Card title
-                 
-              </h3>
-            </div>
-            <div class="card-flap flap1">
-              <div class="event-description">
-              <p> This grid is an attempt to make something nice that works on touch devices. 
-                 </p>
+      
+          <div class="col-1-of-3">
+            <div  class="carousel-cell">
+            <div class="event-card">
+              <div class="date">
+                <span class="card-date-day">10</span>
+                <span class="card-date-month">OCT</span>
               </div>
-              <div class="card-flap flap2">
-                <div class="card-actions">
-                  <a href="#" class="card-btn">Read more</a>
+              <div class="event-card__image-holder">
+                <img class="event-card__image" src="/images/events.svg" alt="wave" />
+              </div>
+              <div class="event-title">
+                <a href="#" class="toggle-info card-btn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h3>
+                    Card title
+                   
+                </h3>
+              </div>
+              <div class="card-flap flap1">
+                <div class="event-description">
+                <p> This grid is an attempt to make something nice that works on touch devices. 
+                   </p>
+                </div>
+                <div class="card-flap flap2">
+                  <div class="card-actions">
+                    <a href="#" class="card-btn">Read more</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          </div>
-        </div>                                                                                                                                                                                                
+            </div>
+          </div>                                                                                                                                                                                                
+                                 
+       
 
+      
      </div>
         </div>
       </section>
 
+<p>
+      <% results.forEach(function (event) { %>
+        <%= event.Date(date) %> 
+        <%= event.event_name %>  
+     <%= event.event_info %>  
+
+        <% }) %>
+      </p>
 
       <%-include("../partials/footer.ejs")%>

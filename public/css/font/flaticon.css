@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 06/11/2020 12:39
+  	Creation date: 09/11/2020 02:20
   	*/
 
 @font-face {
@@ -27,7 +27,7 @@
   font-family: Flaticon;
       
 font-style: normal;
-margin-left: 20px;
+
 }
 
 .flaticon-play:before { content: "\f100"; }
@@ -48,3 +48,15 @@ margin-left: 20px;
 .flaticon-calendar:before { content: "\f10f"; }
 .flaticon-time:before { content: "\f110"; }
 .flaticon-long-term:before { content: "\f111"; }
+.flaticon-plus-1:before { content: "\f112"; }
+.flaticon-plus-symbol-button:before { content: "\f113"; }
+.flaticon-circle-button-thick-outline:before { content: "\f114"; }
+.flaticon-medical-book:before { content: "\f115"; }
+.flaticon-half-circumference:before { content: "\f116"; }
+.flaticon-doodle:before { content: "\f117"; }
+.flaticon-circles-doodle:before { content: "\f118"; }
+.flaticon-blank-tag-doodle:before { content: "\f119"; }
+.flaticon-commercial-label-black-shape:before { content: "\f11a"; }
+.flaticon-play-arrow:before { content: "\f11b"; }
+.flaticon-right-arrow:before { content: "\f11c"; }
+.flaticon-dry-clean:before { content: "\f11d"; }

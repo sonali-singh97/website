@@ -52,7 +52,7 @@
 
       <main>
 
-
+          
           <section class="section-slack">
           <p data-aos="fade-up"  class="contact-main">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium 
@@ -72,6 +72,26 @@
          <img src="/images/slack.gif" alt="slack" >
         </div>
         
+            </div>
+          </section>
+
+          <section class="form">
+            <div class="form__info">
+             
+            </div>
+            
+            <div class="contact-us">
+              <h2>Have a Query?</h2>
+              <form action="">
+                <input placeholder="Name" required="" type="text" />
+                <input name="Email" placeholder="Email" type="email" />
+                <input name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" type="tel" />
+    
+                <textarea name="Message" placeholder="Message" rows="4" cols="50" maxlength="300" 
+                onkeyup="textCounter(this,'queryMessage',300);"  id="queryMessage"> </textarea>
+                
+                <button type="submit">SEND</button>
+              </form>
             </div>
           </section>
 
@@ -96,5 +116,7 @@
           </section>
     
      
+
+         
 
       <%-include("../partials/footer.ejs")%>
