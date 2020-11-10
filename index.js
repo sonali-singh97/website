@@ -7,17 +7,17 @@ const nodemailer=require('nodemailer');
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-const mysql = require('mysql');
-const database = mysql.createConnection({
-  host: 'localhost', 
-  user: 'root',      
-  password: 'Sonali@12',      
- database: 'website'  
-}); 
-database.connect(function(err) {
-  if (err) throw err;
-  console.log('Database is connected successfully !');
-});
+// const mysql = require('mysql');
+// const database = mysql.createConnection({
+//   host: 'localhost', 
+//   user: 'root',      
+//   password: 'Sonali@12',      
+//  database: 'website'  
+// }); 
+// database.connect(function(err) {
+//   if (err) throw err;
+//   console.log('Database is connected successfully !');
+// });
 
 
 
@@ -38,15 +38,17 @@ app.get("/about", function (req, res) {
 
 //CREATE TABLE
 app.get("/events", function (req, res) {
-  let sql ="SELECT image,Date(date), event_name , event_info FROM pastEvents  ORDER BY Date(date) DESC";
-  database.query(sql ,(error, results)=>
-  {
-    if(error)
-    throw error;
-    console.log(results);
+  // let sql ="SELECT image,Date(date), event_name , event_info FROM pastEvents  ORDER BY Date(date) DESC";
+  // database.query(sql ,(error, results)=>
+  // {
+  //   if(error)
+  //   throw error;
+  //   console.log(results);
+  // res.render("pages/events.ejs");
+  // }
+  // )
+
   res.render("pages/events.ejs");
-  }
-  )
 
 });
 
