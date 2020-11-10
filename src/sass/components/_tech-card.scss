@@ -30,7 +30,7 @@
 }
 
 .cards-row{
-	&-1 {
+	&-1  {
 		
 		.tech-card {
          line-height: 2;
@@ -71,10 +71,10 @@
 			// transform : translateX(-50%);
 			display: inline-block;
 			&__border{
-				background-color: #34a853da ;
+				background-color:  #4286f4e3 ;
 			}
 			.btn-text:hover{
-				background-color: #34a853ce;
+				background-color: #4285F4e3;
 				
 			
 			}

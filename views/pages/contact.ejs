@@ -16,7 +16,9 @@
           <h2 class="header__org-name">Developer Students Club</h2>
         </div>
       
-        <span></span>
+         <i class="flaticon-plus-1"></i>
+         <i class="flaticon-plus"></i>
+         <i class="flaticon-commercial-label-black-shape"></i>
         <div class="intro">
           <nav class="user-nav">
             <ul class="user-nav__list">
@@ -41,7 +43,7 @@
           <div class="header-2__img">
             <img src="/images/undraw_contact_us_15o2.svg" alt="event" />
           </div>
-
+         
          
         </div>
         <!-- <div class="header__gif-1"> 
@@ -75,29 +77,40 @@
             </div>
           </section>
 
-          <section class="form">
+          <section class="section-form">
             <div class="form__info">
-             
+            <i class="flaticon-doodle doodle-1"></i>
+
+          <img src="/images/send-mail.png " alt="">
+          <i class="flaticon-doodle doodle-2"></i>
             </div>
             
             <div class="contact-us">
               <h2>Have a Query?</h2>
-              <form action="">
-                <input placeholder="Name" required="" type="text" />
+              <%= msg %> 
+              <form method="POST" action="send">
+
+             
+                <input name="Name" placeholder="Name" required type="text" />
                 <input name="Email" placeholder="Email" type="email" />
                 <input name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" type="tel" />
     
-                <textarea name="Message" placeholder="Message" rows="4" cols="50" maxlength="300" 
-                onkeyup="textCounter(this,'queryMessage',300);"  id="queryMessage"> </textarea>
+                <textarea name="Message" placeholder="Message"  maxlength="300" > </textarea>
                 
-                <button type="submit">SEND</button>
+                <button type="submit" class="btn btn--blue">SEND</button>
               </form>
             </div>
           </section>
 
-          <section data-aos="fade-up" class="section-social"> 
-            <h2>Social</h2>
-            <div class="social_icons">
+          <section class="section-social"> 
+
+            
+            <div data-aos="fade-up"  class="social-heading "> 
+              <i class="flaticon-right-arrow"></i>
+              <h2 >Social</h2>
+             
+            </div>
+            <div data-aos="fade-up"  class="social_icons">
                 <a href="#">
                     <i class="flaticon-facebook"></i>
                 </a>

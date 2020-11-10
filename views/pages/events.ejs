@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/aos.css" />
+    <link rel="stylesheet" href="/css/font/flaticon.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     
@@ -59,8 +60,9 @@
       </section>
 
       <section data-aos="fade-up" class="upcoming-events">
-        <div class="upcoming-events__heading">
-          <h2 class="heading-secondary rotate-left">Upcoming Events</h2>
+        <div data-aos="fade-up"  class="upcoming-events__heading"> 
+          <i class="flaticon-right-arrow"></i>
+          <h2 >  Upcoming Events</h2>
         </div>
      
         <div  class=" row cards">
@@ -299,18 +301,22 @@
       </div>
       <section data-aos="fade-up" class="past-events">
         
-        <div data-aos="fade-left" class="past-events__bg">
-          <img src="/images/screen_3x.webp" alt="">
+        <div data-aos="fade-right" class="past-events__bg">
+                    <img src="/images/screen_3x.webp" alt="">
         </div> 
        <!-- <img src="../src/img/circle.svg" alt=""> -->
-        <div class="past-events__heading">
-          <h2 class="heading-secondary rotate-left">Past events</h2>
+       
+
+        <div data-aos="fade-up"  class="past-events__heading"> 
+          <i class="flaticon-right-arrow"></i>
+          <h2 >  Past Events</h2>
         </div>
+
         <div class=" row cards">
 
           <div  class="carousel" data-flickity='{ "cellAlign": "left","freeScroll": true ,"prevNextButtons": true}'>
          
-<!-- 
+
           <div class="col-1-of-3">
             <div  class="carousel-cell">
           <div class="event-card">
@@ -534,13 +540,5 @@
         </div>
       </section>
 
-<p>
-      <% results.forEach(function (event) { %>
-        <%= event.Date(date) %> 
-        <%= event.event_name %>  
-     <%= event.event_info %>  
-
-        <% }) %>
-      </p>
 
       <%-include("../partials/footer.ejs")%>
