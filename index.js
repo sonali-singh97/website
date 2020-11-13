@@ -43,7 +43,7 @@ app.get("/events", function (req, res) {
   {
     if(error)
     throw error;
-    console.log(results);
+ //   console.log(results);
   res.render("pages/events.ejs");
   }
   )

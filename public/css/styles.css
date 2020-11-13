@@ -902,9 +902,8 @@ p {
 .section-slack {
   text-align: center; }
   .section-slack .contact-main {
-    font-size: 2rem;
     letter-spacing: 1.2;
-    padding: 10rem; }
+    padding: 5rem 10rem; }
   .section-slack .slack {
     display: flex;
     background-color: #f9f9f9; }
@@ -913,13 +912,15 @@ p {
       .section-slack .slack__text h2 {
         margin-bottom: 5rem; }
     .section-slack .slack__img {
-      margin: auto 10rem; }
+      margin: auto 2rem;
+      margin-right: 10rem; }
+      .section-slack .slack__img img {
+        max-width: 100%; }
 
 .section-social {
   padding: 10rem;
   position: relative;
-  background: #f9f9f9;
-  margin-top: 5rem; }
+  background: #f9f9f9; }
   .section-social .social-heading {
     position: absolute;
     display: flex;
@@ -927,7 +928,7 @@ p {
     left: 15rem; }
     .section-social .social-heading .flaticon-right-arrow {
       font-size: 4rem;
-      color: #EA4335;
+      color: #ea4335;
       margin-right: 1rem; }
   .section-social .social_icons {
     margin-top: 4rem;
@@ -940,11 +941,11 @@ p {
       padding: 3rem;
       background-color: #2a2457;
       border-radius: 50%;
-      transition: all .2s;
+      transition: all 0.2s;
       position: relative; }
       .section-social .social_icons a i {
         font-size: 6rem;
-        color: #4285F4; }
+        color: #4285f4; }
       .section-social .social_icons a::after {
         content: "";
         display: inline-block;
@@ -968,16 +969,23 @@ p {
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .section-form {
-  padding-top: 5rem;
+  padding: 5rem 0;
   display: flex;
   justify-content: space-evenly; }
-  .section-form .form__info img {
-    max-width: 80%; }
+  .section-form .form__img {
+    width: 30%; }
+    .section-form .form__img img {
+      height: 100%;
+      width: 100%; }
   .section-form .contact-us {
-    background: #fff;
-    padding: 50px 100px;
+    background: #e8f0fe;
+    padding: 3rem 5rem;
     box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.2);
-    max-width: 50rem; }
+    max-width: 50rem;
+    width: 60%; }
+    .section-form .contact-us h2,
+    .section-form .contact-us p {
+      margin-bottom: 1rem; }
     .section-form .contact-us input, .section-form .contact-us textarea {
       display: block;
       width: 100%;
@@ -986,8 +994,8 @@ p {
       margin-bottom: 28pt;
       border: none;
       border-bottom: 4px solid #121212;
-      background: #ffffff;
-      min-width: 250px;
+      background: #e8f0fe;
+      min-width: 150px;
       padding-left: 5px;
       outline: none;
       color: black; }
@@ -1007,10 +1015,50 @@ p {
     .section-form .contact-us textarea:-webkit-autofill,
     .section-form .contact-us textarea:-webkit-autofill:hover,
     .section-form .contact-us textarea:-webkit-autofill:focus {
-      border-bottom: 4px solid #95a4ff;
+      border-bottom: 4px solid  #4285F4;
       -webkit-text-fill-color: #2A293E;
       -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
       transition: background-color 5000s ease-in-out 0s; }
+
+@media only screen and (max-width: 760px) {
+  .section-slack .contact-main {
+    padding: 3rem 5rem; }
+  .section-slack .slack {
+    flex-direction: column; }
+    .section-slack .slack__text {
+      padding: 5rem; }
+      .section-slack .slack__text h2 {
+        margin-bottom: 2rem; }
+    .section-slack .slack__img {
+      width: 80%;
+      margin: 0 auto 3rem auto; }
+      .section-slack .slack__img img {
+        max-width: 100%;
+        box-shadow: 0 0 8px 8px white inset; }
+  .section-form {
+    padding: 5rem; }
+    .section-form .form__img {
+      display: none; }
+    .section-form .contact-us {
+      padding: 3rem;
+      margin: 0;
+      width: 90%; }
+      .section-form .contact-us input, .section-form .contact-us textarea {
+        border-bottom: 3px solid #121212; }
+        .section-form .contact-us input:focus, .section-form .contact-us textarea:focus {
+          border-bottom: 3px solid #4285f4; }
+  .section-social {
+    padding: 3rem;
+    margin-top: 2rem; }
+    .section-social .social-heading {
+      top: -2rem;
+      left: 5rem; }
+      .section-social .social-heading .flaticon-right-arrow {
+        font-size: 3rem; }
+    .section-social .social_icons a {
+      padding: 2rem; }
+      .section-social .social_icons a i {
+        font-size: 3rem; } }
 
 .about-section {
   padding: 5rem 0;
