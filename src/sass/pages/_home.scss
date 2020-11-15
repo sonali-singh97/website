@@ -3,7 +3,11 @@
    background-color: #F9F9F9 ;
    margin: 5rem  0; 
    margin-bottom:0; 
-   padding: 8rem 10rem;
+   padding: 8rem 5rem;
+
+   @media only screen and (max-width: 900px) {
+      padding: 5rem 0;
+   }
   
    
    .tech-heading{
@@ -11,6 +15,14 @@
        display: flex;
        top:-2rem;
        left:15rem;
+
+   @media only screen and (max-width: 1200px) {
+      left: 7rem;
+   }
+
+   @media only screen and (max-width: 900px) {
+      left: 2rem;
+   }
      
       .flaticon-right-arrow{
          font-size: 4rem;

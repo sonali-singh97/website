@@ -1,0 +1,87 @@
+.profile {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+
+    @media  only screen and (max-width: 900px ) {
+        flex-direction: column;
+    }
+
+
+    &__card {
+        text-align: center;
+        box-shadow: 10px 10px 0 #e6e6ec;
+        position: relative;
+
+        @media  only screen and (max-width: 900px ) {
+            flex-basis: 80%;
+            padding-bottom: 2rem;
+            &:not(:last-child) {
+                margin-bottom: 5rem;
+            }
+        }
+        
+    }
+
+    &__image {
+        margin-bottom: 2rem;
+        img {
+            display: inline-block;
+            height: 30rem;
+        }
+
+        transition: all .2s;
+    }
+
+    &__name {
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+    &__skills {
+        font-size: 1.4rem;
+
+    }
+
+    &__icon {
+        fill: none;
+        height: 3rem;
+        color: #08003c;
+        stroke: #08003c;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    &__link:hover &__icon {
+        fill: #08003c;
+    }
+}
+.contact-box--mentor {
+
+    @media only screen and (min-width: 900px) {
+        visibility: hidden;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .5s;
+    }
+}
+
+.profile__card--effect:hover  .profile__image {
+    opacity: .4;  
+}
+.profile__card--effect:hover .contact-box {
+    visibility: visible;
+    top: 50%;
+}
+
+
+
+
+///////////////////////image   ////////////// 
+// .profile__image--hover:hover ~ .contact-box {
+//     visibility: visible;
+// } 

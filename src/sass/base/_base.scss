@@ -9,6 +9,14 @@ html {
     //font-family: "Open Sans";
     font-family: 'Work Sans', sans-serif;
     letter-spacing: 2px;
+
+    @media only screen and (max-width: 1200px) {
+        font-size: 56.25%;
+    }
+    
+    @media only screen and (max-width: 900px) {
+        font-size: 50%;
+    }
 }
 
 
@@ -22,4 +30,42 @@ a {
 }
 
 
+
+
+
+
+////////////// mentor-section pens ////////
+
+.left__pen {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 15rem;
+    height: 5rem;
+
+    &-icon {
+        fill: #080808;
+    }
+
+    @media  only screen and (max-width: 900px ) {
+        top: 13rem;
+    }
+}
+
+.right__pen {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    width: 15rem;
+    height: 5rem;
+    transform: rotate(180deg);
+    
+    &-icon {
+        fill: #080808;
+    }
+
+    @media  only screen and (max-width: 900px ) {
+        bottom: 0;
+    }
+}
 

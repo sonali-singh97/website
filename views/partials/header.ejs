@@ -14,12 +14,14 @@
   <link rel="stylesheet" href="/css/aos.css" />
   <link rel="stylesheet" type="text/css" href="/css/styles.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/js/index.js"></script>
 </head>
 <body>
   <header class="header">
     <div class="header__logo-box">
       <img src="/images/logo.png" class="header__logo" alt="logo" />
       <h3 class="header__org-name">Developer Students Club</h3>
+      <a href="#" class="nav-button"> </a>   <!-- MY CODE-->
     </div>
     <div class="header-background__square">
       &nbsp;
@@ -56,6 +58,39 @@
         <img src="/images/DSC.svg" alt="dsc text" />
       </div>
     </div>
+    
+    <!-- ////////// MY CODE ////////////-->
+
+
+    <div class="mobile-nav show">
+      <nav class="user-nav">
+        <ul class="user-nav__list">
+          <li class="user-nav__item">
+            <a href="#" class="user-nav__link active">Home</a>
+          </li>
+          <li class="user-nav__item">
+            <a href="/about" class="user-nav__link">About</a>
+          </li>
+          <li class="user-nav__item">
+            <a href="/events" class="user-nav__link">Events</a>
+          </li>
+         
+          <li class="user-nav__item">
+            <a href="/faq" class="user-nav__link">FAQ</a>
+          </li>
+          <li class="user-nav__item">
+            <a href="/contact" class="user-nav__link">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
+<script>
+  let nav = document.querySelector('.mobile-nav')
+  let btn = document.querySelector('.nav-button')
+  function showNav() {
+    nav.classList.toggle("show")
+  }
+  btn.addEventListener('click', showNav)
+</script>

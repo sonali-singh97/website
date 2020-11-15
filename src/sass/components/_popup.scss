@@ -1,0 +1,126 @@
+.popup {
+    padding: 4rem 0rem;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 60;
+    background-color: rgba(0,0,0,.8);
+    transition: all .6s;
+
+    &__btn {
+        &:link,&:visited {
+            display: inline-block;
+            font-size: 4rem;
+            text-emphasis: none;
+            color: red;
+            position: absolute;
+            top: -5rem;
+            right: 2rem;
+        }
+    }
+    
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 75%;
+        margin: auto;
+        padding: 2rem 0;
+        transform: scale(.5);
+        transition: transform .8s;
+
+        @media only screen and (max-width: 900px) {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+    }
+
+    &__left {
+        flex-basis: 40%;
+        // border: 2px solid black;
+        text-align: center;
+
+    }
+
+    &__right {
+        flex-basis: 60%;
+        padding: 8rem;
+        position: relative;
+
+    }
+
+    &__img {
+        height: 25rem;
+        margin-bottom: 3rem;
+        box-shadow: 5px 5px 0px #206a5d;
+        @media only screen and (max-width: 900px) {
+            height: 15rem;
+        }
+    }
+
+    &__name {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    &__head {
+        margin-bottom: 5rem;
+
+        &--1 {
+            display: inline-block;
+            border-bottom: 5px solid green;
+        }
+
+        &--2 {
+            color: green;
+        }
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        line-height: 25px;
+        position: relative;
+        padding: 5rem;
+        box-shadow: 0 0 5px rgba(0,0,0,.5);
+        // border: 2px solid red;
+
+        &::before {
+            content: '\0022';
+            position: absolute;
+            top: 2rem;
+            left: 0rem;
+            color: #ddd;
+            font-size: 18rem;
+
+        }
+
+        
+        &::after {
+            content: '\0022';
+            position: absolute;
+            bottom: -5rem;
+            right: 0;
+            color: #ddd;
+            font-size: 18rem;
+
+        }
+
+
+    }
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content {
+        transform: scale(1);
+    }
+
+}
