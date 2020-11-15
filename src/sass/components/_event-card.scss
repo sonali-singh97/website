@@ -1,7 +1,25 @@
 
+.flickity-viewport{
+  height:550px;
+}
+
+.flickity-page-dots .dot{
+  width:8px;
+}
+.carousel{
+  margin:0 5rem;
+  padding:0 10rem;
+ &-cell{
+    width:30%;
+    margin:3rem;
+   
+  }
+}
+
 .event-card {
   background: #ffffff;
   height:400px;
+ 
   -webkit-perspective: 1000;
   perspective: 1000;
   box-shadow: 0 10px 30px -15px rgba(0,0,0,.2);
@@ -50,7 +68,7 @@
       //height:300px;
      width:100%;
      height:100%;
-     object-fit: cover;
+    object-fit: cover;
 
     }
   }
@@ -145,17 +163,7 @@ margin-top:0.5rem;
 
 
 
-// .cards.showing .event-card {
- 
 
-//   -webkit-transform: scale(0.88);
-//   transform: scale(0.88);
-// }
-// .no-touch .cards.showing .event-card:hover {
-
-//   -webkit-transform: scale(0.92);
-//   transform: scale(0.92);
-// }
 
 
 .event-card.show {
@@ -194,7 +202,37 @@ margin-top:0.5rem;
 }
 }
 
-.flickity-viewport{
-  height:550px;
+
+
+@media only screen and  (max-width:1200px ){
+  .carousel{
+    margin:0 ;
+    padding:0 5rem ;
+   &-cell{
+      width:50%;
+      margin:3rem;
+    }
+  }
+  
 }
 
+@media only screen and  (max-width:760px ){
+  .carousel{
+    margin:0 ;
+    padding:0  ;
+   &-cell{
+      width:100%;
+      margin:3rem;
+    }
+  }
+  .events{
+  &-illustration{
+    width:90%;
+  }
+    &-heading {
+        margin: 3rem  ;
+   
+ }
+}
+  
+}

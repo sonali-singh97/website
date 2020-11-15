@@ -1,18 +1,44 @@
     
   <%-include("../partials/header.ejs")%>
+  <!-- <div class="boxes">
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div> -->
+
 
     <!-- about section -->
     <section class='info-section'>
         <div class=" info-container">
      
-        <a data-aos="fade-right"
+        <div data-aos="fade-right"
         data-aos-offset="300"
-        data-aos-easing="ease-in-sine" href="https://youtu.be/qWrc2blCWUo" class="info__img" >
-       <img src="/images/info.png" alt="dsc">
-       <div class="play-btn">
-         <i class ="flaticon-play"></i> 
-        </div> 
-      </a>
+        data-aos-easing="ease-in-sine" class="info__video" >
+        <iframe  src="https://www.youtube.com/embed/qWrc2blCWUo" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+         allowfullscreen class="video"></iframe>
+      </div>
       
        <div data-aos="fade-left"
        data-aos-offset="300"
@@ -36,7 +62,7 @@
       
       <!-- Technology setion -->
     
-        <section class="tech-section">
+        <section  class="tech-section">
       
           <div data-aos="fade-up" data-aos-offset="300" class="tech-heading "> 
             <i class="flaticon-right-arrow"></i>
@@ -45,11 +71,11 @@
           </div>
       
           
+             
+            <div  class="cards-row">
+           
             
-    
-            <div data-aos="fade-up" data-aos-offset="300" class="row cards-row-1">
-              <div class='col-1-of-3'>
-                <div class="tech-card">
+                <div data-aos="fade-up" data-aos-offset="300" class="tech-card">
                 <i class="flaticon-cloud-computing"> </i>
                 <h3>Cloud Computing</h3>
                
@@ -63,10 +89,10 @@
                 </div>
               </div>
     
-              </div>
+             
     
-              <div class='col-1-of-3'>
-                <div class="tech-card">
+             
+                <div data-aos="fade-up" data-aos-offset="300" class="tech-card">
                 <i class="flaticon-analysis"> </i>
                 <h3>Data Analysis</h3>
                 
@@ -79,10 +105,10 @@
                 </div>
               </div>
     
-              </div>
+              
     
-              <div class='col-1-of-3'>
-                <div class="tech-card">
+              
+                <div data-aos="fade-up" data-aos-offset="300" class="tech-card">
                 <i class="flaticon-shield"> </i>
                 <h3>Cybersecurity</h3>
                
@@ -94,12 +120,11 @@
                 </div>
               </div>
     
-              </div>
-            </div>
+     
     
-            <div data-aos="fade-up" data-aos-offset="300" class="row cards-row-2">
-              <div class='col-1-of-3'>
-                <div class="tech-card">
+           
+          <!-- cards-row-2 -->
+                <div data-aos="fade-up" data-aos-offset="300" class="tech-card">
                 <i class="flaticon-android-logo"> </i>
                 <h3>Android Development</h3>
                
@@ -112,10 +137,9 @@
                 </div>
               </div>
     
-              </div>
+             
     
-              <div class='col-1-of-3'>
-                <div class="tech-card">
+                <div data-aos="fade-up" data-aos-offset="300" class="tech-card">
                 <i class="flaticon-web-development"> </i>
                 <h3>Web Development</h3>
                 
@@ -130,10 +154,9 @@
                 </div>
               </div>
     
-              </div>
     
-              <div class='col-1-of-3'>
-                <div class="tech-card">
+            
+                <div data-aos="fade-up" data-aos-offset="300" class="tech-card">
                 <i class="flaticon-learning"> </i>
                 <h3>Machine Learning</h3>
                
@@ -144,11 +167,10 @@
                 </div>
               </div>
     
-              </div>
-            </div>
+      
     
-            <div data-aos="fade-up" data-aos-offset="300"  class="row cards-row-3">
-              <div class='col-1-of-3 '>
+            <div data-aos="fade-up" data-aos-offset="300"  class=" cards-row-3">
+          
                 <div class="tech-card ">
                 <i class="flaticon-coding"> </i>
                 <h3>Competitive Programming</h3>
@@ -163,11 +185,11 @@
                 </div>
               </div>
     
-              </div>
+              
     
            
             </div>
-         
+         </div>
         </section>
 
         

@@ -27,7 +27,7 @@ overflow: hidden;
      
    
     .plus-2{
-        font-size: 5rem;
+        font-size: 3rem;
         position: absolute;
         transform:rotate(45deg);
         bottom:20%;
@@ -39,11 +39,11 @@ overflow: hidden;
     &:before {
         content: "";
         position: absolute;
-        top: -5rem;
-        left: -10%;
+        top: 20%;
+        left: -15%;
         
-        width: 60rem;
-        height: 60rem;
+        width: 40%;
+        height: 70%;
         background: linear-gradient(to left top, #2A2457  , #08003C 50%);
         transform: rotate(-45deg);
         border-radius: 5rem;
@@ -53,17 +53,15 @@ overflow: hidden;
  
 
 &__img{
-    
-    //position: absolute;
-    // left: 60%;
-    // top: 40%;
-    // transform: translate(-50%, -50%);
- 
-    margin-top: -5rem;
+
+   margin-top: -5%;
     margin-right: 10rem;
     flex-basis: 50%;
+  
+   
     
     img{
+       height:100%;
         max-width: 100%;
        
     }
@@ -78,8 +76,8 @@ overflow: hidden;
     border-radius: 50%;
     animation: round 2s linear;
     animation-iteration-count: infinite;
-    width: 30rem;
-    height: 30rem;
+    width: 20rem;
+    height: 20rem;
     background: linear-gradient(210.51deg, #2A2457 -12.32%, #08003C 92%);
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
    // transform: translate(-50%, -50%) rotate(24.94deg);

@@ -1,10 +1,10 @@
 .section-slack {
   text-align: center;
 
-  .contact-main {
-    letter-spacing: 1.2;
-    padding: 5rem 10rem;
-  }
+  // .contact-main {
+  //   letter-spacing: 1.2;
+  //   padding: 5rem 10rem;
+  // }
   .slack {
     display: flex;
     background-color: #f9f9f9;
@@ -29,14 +29,14 @@
   padding: 10rem;
   position: relative;
   background: #f9f9f9;
- // margin-top: 5rem;
+  margin-top: 5rem;
 
   .social-heading {
-    position: absolute;
+   position: absolute;
     display: flex;
     top: -2rem;
-    left: 15rem;
-
+     left: 15rem;
+  
     .flaticon-right-arrow {
       font-size: 4rem;
       color: #ea4335;
@@ -111,6 +111,10 @@
   }
  
 
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
 .contact-us {
   background: #e8f0fe;
@@ -142,44 +146,10 @@
   &:focus {
     border-bottom: 4px solid #4285F4;
   }
-  }
+}
+}
+}
 
-  
-  button {
-    display: block;
-    margin: 0 auto;
-    line-height: 28pt;
-    padding: 0 20px;
-    // background: #ffa580;
-    // letter-spacing: 2px;
-    // transition: 0.2s all ease-in-out;
-     outline: none;
-    
-    
-    // border: 1px solid black;
-    // box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
-
-    
-  }
-
-  
-  ::selection {
-    background:#E8F0FE;
-  }
-  
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus ,
-  textarea:-webkit-autofill,
-  textarea:-webkit-autofill:hover,
-  textarea:-webkit-autofill:focus 
-  {
-    border-bottom: 4px solid  #4285F4;
-    -webkit-text-fill-color: #2A293E;
-    -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
-    transition: background-color 5000s ease-in-out 0s;
-  }
-  } }
 
   // media query for mobile devices
 

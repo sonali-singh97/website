@@ -1,137 +1,123 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
-    <link rel="stylesheet" href="/css/font/flaticon.css">
+
+    <link rel="stylesheet" href="/css/font/flaticon.css" />
     <link rel="stylesheet" href="/css/aos.css" />
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-<body>
+  <body>
     <header class="header-2">
-        <div class="header__logo-box">
-          <img src="/images/logo.png" class="header__logo" alt="logo" />
-          <h2 class="header__org-name">Developer Students Club</h2>
+      <div class="header__logo-box">
+        <img src="/images/logo.png" class="header__logo" alt="logo" />
+        <h3 class="header__org-name">Developer Students Club</h3>
+      </div>
+
+      <span>
+        <i class="flaticon-plus-symbol-button"></i>
+        <i class="flaticon-plus-1 plus-2"> </i>
+      </span>
+      <div class="intro">
+        <nav class="user-nav">
+          <ul class="user-nav__list">
+            <li class="user-nav__item">
+              <a href="/" class="user-nav__link">Home</a>
+            </li>
+            <li class="user-nav__item">
+              <a href="/about" class="user-nav__link">About</a>
+            </li>
+            <li class="user-nav__item">
+              <a href="/events" class="user-nav__link">Events</a>
+            </li>
+
+            <li class="user-nav__item">
+              <a href="/faq" class="user-nav__link">FAQ</a>
+            </li>
+            <li class="user-nav__item">
+              <a href="/contact" class="user-nav__link active">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-2__img">
+          <img src="/images/undraw_contact_us_15o2.svg" alt="event" />
         </div>
-      
-        <span>
-      
-          <i class="flaticon-plus-symbol-button "></i>
-          <i class="flaticon-plus-1 plus-2"> </i>
-        </span>
-        <div class="intro">
-          <nav class="user-nav">
-            <ul class="user-nav__list">
-              <li class="user-nav__item">
-                <a href="/" class="user-nav__link">Home</a>
-              </li>
-              <li class="user-nav__item">
-                <a href="/about" class="user-nav__link">About</a>
-              </li>
-              <li class="user-nav__item">
-                <a href="/events" class="user-nav__link">Events</a>
-              </li>
-  
-              <li class="user-nav__item">
-                <a href="/faq" class="user-nav__link ">FAQ</a>
-              </li>
-              <li class="user-nav__item">
-                <a href="/contact" class="user-nav__link active">Contact us</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header-2__img">
-            <img src="/images/undraw_contact_us_15o2.svg" alt="event" />
-          </div>
-         
-         
-        </div>
-        <!-- <div class="header__gif-1"> 
+      </div>
+      <!-- <div class="header__gif-1"> 
           <img src="/images/d04d34c8a3d532c9a0d53396744c7d04.gif" alt="gif">
         </div> -->
-      </header>
+    </header>
 
+    <main>
+      <section class="section-slack">
+        <!-- <p data-aos="fade-up" class="contact-main">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          fugit exercitationem unde earum libero corrupti consectetur commodi
+          sunt aliquid iste illum ullam, veritatis reprehenderit, labore, vero
+          consequuntur maxime facilis quae!
+        </p> -->
 
-      <main>
+        <div data-aos="fade-up" class="slack">
+          <div class="slack__text">
+            <h2>Join our community on slack</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              voluptate sed animi illo repellat enim nisi reprehenderit
+            </p>
+            <a class="btn btn--blue" href="#"> Join slack</a>
+          </div>
 
-          
-          <section class="section-slack">
-          <p data-aos="fade-up"  class="contact-main">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium 
-              fugit exercitationem unde earum libero corrupti consectetur 
-              commodi sunt aliquid iste illum ullam, veritatis reprehenderit, labore, vero consequuntur maxime facilis quae!
-          </p>
-
-          <div data-aos="fade-up"  class="slack">
-
-            <div class="slack__text">
-              <h2>Join our community on slack</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptate sed animi illo repellat enim nisi reprehenderit </p>
-              <a class="btn btn--blue" href="#"> Join slack</a>
-            </div>
-
-            <div class="slack__img">
-         <img src="/images/slack.gif" alt="slack" >
+          <div class="slack__img">
+            <img src="/images/slack.gif" alt="slack" />
+          </div>
         </div>
-        
-            </div>
-          </section>
+      </section>
 
-          <section class="section-form">
-            <div class="form__img">
-           
+      <section data-aos="fade-up" class="section-form">
+        <div class="form__img">
+          <img src="/images/undraw_Mailbox_re_dvds.svg " alt="" />
+        </div>
 
-          <img src="/images/undraw_Mailbox_re_dvds.svg " alt="">
-       
-            </div>
-            
-            <div class="contact-us">
-              <h2>Have a Query?</h2>
-              <%= msg %> 
-              <form method="POST" action="send">
+        <div class="contact-us">
+          <h2>Shoot us a Query</h2>
+          <p><%= msg %></p>
+          <form method="POST" action="send">
+            <input name="Name" placeholder="Name" required type="text" />
+            <input name="Email" placeholder="Email" type="email" />
+            <input name="Phone" placeholder="Phone" type="tel" />
 
-             
-                <input name="Name" placeholder="Name" required type="text" />
-                <input name="Email" placeholder="Email" type="email" />
-                <input name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" type="tel" />
-    
-                <textarea name="Message" placeholder="Message"  maxlength="300" > </textarea>
-                
-                <button type="submit" class="btn btn--blue">SEND</button>
-              </form>
-            </div>
-          </section>
+            <textarea name="Message" placeholder="Message" maxlength="300">
+            </textarea>
 
-          <section class="section-social"> 
+            <button type="submit" class="card-btn">SEND</button>
+          </form>
+        </div>
+      </section>
 
-            
-            <div data-aos="fade-up"  class="social-heading "> 
-              <i class="flaticon-right-arrow"></i>
-              <h2 >Social</h2>
-             
-            </div>
-            <div data-aos="fade-up"  class="social_icons">
-                <a href="#">
-                    <i class="flaticon-facebook"></i>
-                </a>
+      <section class="section-social">
+        <div data-aos="fade-up" class="social-heading">
+          <i class="flaticon-right-arrow"></i>
+          <h2>Social</h2>
+        </div>
+        <div data-aos="fade-up" class="social_icons">
+          <a href="#">
+            <i class="flaticon-facebook"></i>
+          </a>
 
-                <a href="#">
-                  <i class="flaticon-instagram"></i>
-                </a>
-                <a href="#">
-                  <i class="flaticon-twitter"></i>
-                </a>
+          <a href="#">
+            <i class="flaticon-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="flaticon-twitter"></i>
+          </a>
 
-                <a href="#">
-                  <i class="flaticon-linkedin"></i>
-                </a>
-            </div>
-          </section>
-    
-     
-
-         
+          <a href="#">
+            <i class="flaticon-linkedin"></i>
+          </a>
+        </div>
+      </section>
 
       <%-include("../partials/footer.ejs")%>
+ 

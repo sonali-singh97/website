@@ -17,7 +17,9 @@
 
     <main>
         <div class="event-heading">
-         <h2 class="heading-secondary">Getting Started with Google Cloud</h2>
+
+           
+         <h2 class="heading-secondary"><%=eventName%></h2>
         </div>
         <section class="section-event">
           
@@ -30,21 +32,21 @@
                   
             <img  class="section-event_bg" src="/images/circle.svg" alt="">
           
-            <img src="/images/banner-cl.jpg" alt="">
+            <img src="/images/upload/<%=eventBanner%>" alt="">
             <!-- <i class="flaticon-circles-doodle"></i> -->
         </div>
             <div class="event__info">
                 <span class="event__info-calendar">
                  <i class="flaticon-calendar"></i>
-                  <p>Date: 10 Oct</p>
+                  <p>Date: <%=eventDate%></p>
                 </span>
                 <span class="event__info-time">
                     <i class="flaticon-time"></i>
-                    <p>Time:5:00pm</p>
+                    <p>Time:<%=eventTime%></p>
                 </span>
                 <span class="event__info-duration">
                     <i class="flaticon-long-term"></i>
-                    <p>Duration: 1hr</p>
+                    <p>Duration: <%=eventDuration%>hr</p>
                 </span>
             </div>
         </section>
@@ -54,20 +56,15 @@
                <i class="flaticon-right-arrow"></i>
          <h3>About the event</h3>
         </div>
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum facere placeat dolore architecto
-              vitae quae nemo aspernatur ea doloribus! Pariatur itaque iusto ratione non, perspiciatis asperiores ea eum nemo
-               at Lorem, ipsum dolor sit amet consectetur adipisicing elit. A accusamus reiciendis ne
-               mo eligendi, ipsa iure? Quidem exceptur
-               i, sunt laudantium dolor reprehenderit a ad vel autem laboriosam recusandae nihil mollitia. Perspiciatis.!</p>
-               <p>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci unde cumque ut officia repellendus fuga, 
-                   quo odio soluta. Enim blanditiis repellat doloremque animi reprehenderit natus, ullam magnam itaque porro sunt?
+         <p><%=eventDetails%>
                </p>
 
-               <p><a href="#">Link for the event PPT</a></p>
-               <p><a href="#">Link for the event</a></p>
+               <p><a href="<%=eventVideo%>">Session video</a></p>
+               <p><a href="<%=eventPPT%>">Session presentation</a></p>
 
            </div>
+
+        
            <div class="event__details-img">
 
              <!-- <i class="flaticon-circle-button-thick-outline"></i>
@@ -83,10 +80,18 @@
              <i class="flaticon-play-arrow"></i>
            </div>
         </section>
-        <section class="section-speaker">  
+       <section class="section-speaker">  
          <h2>Speaker</h2>
-         <img src="" alt="">
-           <p>Sakshi tomar</p>
+         <div class="speakers">
+        <div class="speaker_card">
+             <img src="/images/upload/<%=speakerImage%>"alt="">
+           <p> <%=speakerName%></p>
+        </div>
+    </div>
+      
+   </div>     
+  
+
         </section>
     </main>
 

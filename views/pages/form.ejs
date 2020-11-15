@@ -1,0 +1,138 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="event-form">
+
+        <h2>Past Event Details Form</h2>
+    <form action="/submit" method="post"  enctype="multipart/form-data">
+        <div >
+        <label for="name">
+            Event name
+        <input type="text" name="event_name" id="name" > </label>
+    </div>
+    <br><br>
+    
+    <div>
+        <label for="image">
+            Event image
+        <input type="file" name="event_image" id="image"  accept="image/*"> </label>
+    </div>
+    <br><br>
+
+    <div>
+        <label for="banner">
+            Event banner
+        <input type="file" name="event_banner" id="banner" accept="image/*" > </label>
+    </div>
+    <br><br>
+    
+    <div>
+        <label for="date">
+            Date of event
+        <input type="date" name="event_date" id="date" > </label>
+    </div>
+    <br><br>
+    
+       <div>
+        <label for="time">
+            Time of Event
+        <input type="time" name="event_time" id="time" > </label>
+    </div>
+    <br><br>
+    
+        <div>
+        <label for="duration">
+            Duration of Event
+        <input type="text" name="event_duration" id="duration" > </label>
+    </div>
+    <br><br>
+    
+        <div>
+        <label for="info">
+            Event info
+        <input type="text" name="event_info" id="info" > </label>
+    
+    </div>
+    <br><br>
+    
+        <div>
+        <label for="details">
+            Event details
+        <textarea name="event_details" id="details" col="80"  row="10"> </textarea> </label>
+    </div>
+  <br> <br>
+
+  <div>
+    <label for="speaker_name">
+      First  Speaker name
+    <input type="text" name="speaker_name1" id="speaker_name" > </label>
+
+</div>
+<br><br>
+
+<div>
+    <label for="speaker_img">
+        Speaker image
+    <input type="file" name="speaker_img1" id="speaker_img" accept="image/*"> </label>
+
+</div>
+<br><br>
+
+<div>
+    <label for="speaker_name">
+      Second Speaker name
+    <input type="text" name="speaker_name2" id="speaker_name" > </label>
+
+</div>
+<br><br>
+
+<div>
+    <label for="speaker_img">
+        Speaker image
+    <input type="file" name="speaker_img2" id="speaker_img"  accept="image/*"> </label>
+
+</div>
+<br><br>
+
+<div>
+    <label for="speaker_name">
+       Third Speaker name
+    <input type="text" name="speaker_name3" id="speaker_name" > </label>
+
+</div>
+<br><br>
+
+<div>
+    <label for="speaker_img">
+        Speaker image
+    <input type="file" name="speaker_img3" id="speaker_img" accept="image/*"> </label>
+
+</div>
+<br><br>
+
+    <div>
+        <label for="video">
+            Event video url
+        <input type="url" name="event_video" id="video" > </label>
+    
+    </div>
+    <br><br>
+
+    <div>
+        <label for="ppt">
+            Event ppt
+        <input type="url" name="event_ppt" id="ppt" > </label>
+    
+    </div>
+    <br><br>
+    <button type="submit">submit</button>
+    </form> 
+</div>
+</body>
+</html>
