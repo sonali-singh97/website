@@ -1,7 +1,8 @@
 .header {
     // padding: 0 1rem;
-    padding: 3rem ;
-    height: 72vh;
+    // padding: 3rem ;
+    // height: 72vh;
+    padding: 3rem 0;
   
     background-color: #08003c;
     position: relative;
@@ -23,6 +24,8 @@
     &__logo-box {
         display: flex;
         align-items: center;
+        // border: 2px solid red;
+        // padding: 2rem 0;
     }
 
     &__logo {
@@ -49,6 +52,10 @@
         transform: rotate(-45deg);
         border-radius: 5rem;
         z-index: -1;
+
+        @media only screen and (max-width: 1200px) {
+            display: none;
+        }
     }
 
     
@@ -71,7 +78,12 @@
 .intro {
     display: flex;
     justify-content:space-between;
-    padding: 5rem ;
+    padding: 5rem;
+
+    @media only screen and (max-width: 1200px) {
+        visibility: hidden;
+        display: none;
+    }
 
 
 }
@@ -82,6 +94,10 @@
         text-align: center;
         &:not(:last-child) {
             margin-bottom: 5rem;
+
+            @media only screen and (max-width: 1200px) {
+                margin-bottom: 4rem;
+            }
         }
     }
 
@@ -108,7 +124,7 @@ color:#fff;
     flex-basis: 40%;
     &__name {
         text-transform: uppercase;
-        line-height: auto;
+        line-height: 60px;
         
         margin: auto;
       
@@ -133,6 +149,17 @@ color:#fff;
 
 ///////////////////////////
 ///     button
+
+.mobile-nav {
+    margin-top: 2rem;
+
+    @media only screen and (max-width: 900px) {
+        margin-top: 4rem;
+    }
+    @media only screen and (min-width: 1200px) {
+        display: none;
+    }
+}
 .btn {
     border: 2px solid white;
     border-radius: 10px;
@@ -160,4 +187,47 @@ color:#fff;
         transform: translate(-50%, -50%);
         
     }
+}
+
+
+/////////////// my code
+.show {
+    display: none;
+}
+.nav-button {
+    margin-left: auto;
+    width: 5rem;
+    height: 5px;
+    background-color: white;
+    margin-right: 2rem;
+    position: relative;
+    border: none;
+    display: none;
+
+    @media only screen and (max-width: 900px) {
+        margin-right: 1rem;
+    }
+
+    &::before, &::after {
+        content: ' ';
+        position: absolute;
+        width: 5rem;
+        height: 5px;
+        top: -1.5rem;
+        left: 0;
+        background-color: white;
+    }
+
+    &::after {
+        top: 1.5rem;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        display: block;
+    }
+
+}
+
+.nav-button:active .nav-button::before {
+    display: none;
 }
