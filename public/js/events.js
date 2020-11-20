@@ -13,7 +13,7 @@
 
 let zindex = 10;
 
-document.querySelectorAll(".card-btn").forEach((cardBtn) => {
+document.querySelectorAll(".card-button").forEach((cardBtn) => {
   cardBtn.addEventListener("click", (e) => {
     e.preventDefault();
     let card = cardBtn.parentNode.parentNode;

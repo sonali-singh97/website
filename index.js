@@ -81,7 +81,7 @@ app.get("/events/:eventName", function(req, res) {
            eventVideo :result.event_video,
            eventPPT:result.event_ppt,
          speakerName : result.speaker_name1,
-         speaker: result.speaker_img1
+         speakerImage: result.speaker_img1
           
         });
       }

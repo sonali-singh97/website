@@ -9,11 +9,13 @@
 .carousel{
   margin:0 5rem;
   padding:0 10rem;
+  z-index:1;
  &-cell{
     width:30%;
     margin:3rem;
    
   }
+
 }
 
 .event-card {
@@ -68,7 +70,7 @@
       //height:300px;
      width:100%;
      height:100%;
-    object-fit: cover;
+   // object-fit: cover;
 
     }
   }

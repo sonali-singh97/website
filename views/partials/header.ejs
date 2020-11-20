@@ -61,11 +61,11 @@
     <!-- ////////// MY CODE ////////////-->
 
 
-    <div class="mobile-nav show">
+    <div class="mobile-nav showing">
       <nav class="user-nav">
         <ul class="user-nav__list">
           <li class="user-nav__item">
-            <a href="#" class="user-nav__link active">Home</a>
+            <a href="/" class="user-nav__link active">Home</a>
           </li>
           <li class="user-nav__item">
             <a href="/about" class="user-nav__link">About</a>
@@ -85,13 +85,5 @@
     </div>
   </header>
 
-  <script>
-    let nav = document.querySelector('.mobile-nav')
-    let btn = document.querySelector('.nav-button')
-    function showNav() {
-      nav.classList.toggle("show")
-    }
-    btn.addEventListener('click', showNav)
-  </script>
 
   <main>
