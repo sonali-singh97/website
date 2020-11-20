@@ -4,8 +4,6 @@
   "description": "\"Developer students club website\"",
   "main": "index.js",
   "scripts": {
-    "dev": "rm -rf ./development && rm -rf ./.cache && parcel views/home_page.ejs  --out-dir development ",
-    "build": "parcel build views/home_page.ejs--out-dir dist --public-url ./",
     "compile-sass": "node-sass src/sass/main.scss public/css/styles.css -w"
   },
   "author": "",
