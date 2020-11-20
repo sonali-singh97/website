@@ -2,16 +2,18 @@
     position: relative;
     width: 100%;
     margin: 6rem;
- 
-    
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
     .info__video{
      
-        display: inline-block;
+       // display: inline-block;
        position: relative ;
-       margin-top:6rem;
-       margin-left: 6rem;
+      // margin-top:6rem;
+      // margin-left: 6rem;
         width:40rem;
         height: 30rem;
+        //margin-right:3rem;
         //border: 1px solid black;
 
         .video{
@@ -74,12 +76,12 @@
     }
 
     .details{
-        position:absolute;
-        top: 0rem;
-        left:35%;
-        z-index: -3;
-        width: 60%;
-        height: 40rem;
+      //  position:absolute;
+      //  top: 0rem;
+      //  left:35%;
+      //  z-index: -3;
+       width: 60%;
+      //  height: 40rem;
         font-size: 3rem;
         box-shadow: 0 10px 30px -15px rgba(0,0,0,.2);
         background:  #f4f4f4; 

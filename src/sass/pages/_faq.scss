@@ -88,3 +88,19 @@
 
 }
 
+// .accordion-item__content--bold , .accordion-item__ques--bold {
+//   font-size: 4rem;
+//   color:#FAD2CF;
+//   margin-right: 1px;
+//   margin-top:auto;
+
+// }
+
+@media only screen and (max-width: 760px)  {
+  .section-faq{
+    .faq-container{
+      margin: 3rem 5rem ;
+    }
+  }
+  
+}

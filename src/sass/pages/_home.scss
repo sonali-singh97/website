@@ -1,96 +1,81 @@
-.tech-section{
-    position: relative;
-   background-color: #F9F9F9 ;
-   margin: 5rem  0; 
-   margin-bottom:0; 
-   padding: 8rem 10rem;
-  
-   
-   .tech-heading{
-       position: absolute;
-       display: flex;
-       top:-2rem;
-       left:15rem;
-     
-      .flaticon-right-arrow{
-         font-size: 4rem;
-         color:#EA4335;
-       //  text-shadow: 0 2px #1A73E8;
-         margin-right: 1rem;
-      }
-    
-      
-   }
-   
-   }
-   
-   .info-section{
-      margin: 3rem  5rem;
-      padding:7rem;
-     
-     
-   }
+.tech-section {
+  position: relative;
+  background-color: #f9f9f9;
+  margin: 5rem 0;
+  margin-bottom: 0;
+  padding: 8rem 10rem;
+
+  .tech-heading {
+    position: absolute;
+    display: flex;
+    top: -2rem;
+    left: 15rem;
+
+    .flaticon-right-arrow {
+      font-size: 4rem;
+      color: #ea4335;
+      //  text-shadow: 0 2px #1A73E8;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.info-section {
+  margin: 3rem 5rem;
+  padding: 7rem;
+}
 
 @media only screen and (max-width: 760px) {
+  .info-section {
+    margin: 0;
+    padding: 3rem;
 
-     
-   .info-section{
+    .info-container {
       margin: 0;
-    //  padding:3rem;
+      padding: 0;
+      flex-flow: column;
 
-.info-container{
-   margin:0;
-   padding:0;
-   text-align: center;
-   .info__video{
-     
-      margin:0 auto;
-   }
+      .info__video {
+        margin-bottom: 2rem;
+      }
 
-   .details{
-   position:relative;
-   margin:2rem 0;
-   left:0;
-   top:0;
-   
-   height:auto;
-  width:90%;
-   padding:2rem;
+      .details {
+        width: 100%;
+      }
+    }
+  }
+
+  .tech-section{
+   margin: 3rem 0;
+   margin-bottom:0;
+   padding:5rem 3rem ;
+
+
+   .tech-heading {
+      top: -2rem;
+      left: 3rem;
   
-   }
+    
+    }
+  }
 }
-   }
-   }
 
+@media only screen and (max-width: 1200px) {
+  .info-section {
+    margin: 0;
+    padding: 5rem;
 
-   @media only screen and (max-width: 1200px) {
+    .info-container {
+      margin: 0;
+      padding: 0;
 
-     
-      .info-section{
-         margin: 0;
-       //  padding:3rem;
-   
-   .info-container{
-      margin:0;
-      padding:0;
-      text-align: center;
-      .info__video{
-        
-         margin:0 auto;
+      .info__video {
+        margin-right: 3rem;
       }
-   
-      .details{
-      position:relative;
-      margin:2rem 0;
-      left:0;
-      top:0;
-      
-      height:auto;
-     width:90%;
-      padding:2rem;
-     
+
+      .details {
+        padding: 2rem;
       }
-   }
-      }
-      }
- 
+    }
+  }
+}

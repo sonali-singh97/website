@@ -400,12 +400,12 @@ p {
 .info-container {
   position: relative;
   width: 100%;
-  margin: 6rem; }
+  margin: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
   .info-container .info__video {
-    display: inline-block;
     position: relative;
-    margin-top: 6rem;
-    margin-left: 6rem;
     width: 40rem;
     height: 30rem; }
     .info-container .info__video .video {
@@ -431,12 +431,7 @@ p {
       background-color: red;
       z-index: -1; }
   .info-container .details {
-    position: absolute;
-    top: 0rem;
-    left: 35%;
-    z-index: -3;
     width: 60%;
-    height: 40rem;
     font-size: 3rem;
     box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.2);
     background: #f4f4f4;
@@ -679,7 +674,6 @@ p {
 
 .footer {
   padding: 8rem 5rem;
-  margin-top: 10rem;
   background-color: #08051A; }
 
 .footer-nav {
@@ -1023,8 +1017,8 @@ p {
 
 .tech-section {
   position: relative;
-  background-color: #F9F9F9;
-  margin: 5rem  0;
+  background-color: #f9f9f9;
+  margin: 5rem 0;
   margin-bottom: 0;
   padding: 8rem 10rem; }
   .tech-section .tech-heading {
@@ -1034,47 +1028,43 @@ p {
     left: 15rem; }
     .tech-section .tech-heading .flaticon-right-arrow {
       font-size: 4rem;
-      color: #EA4335;
+      color: #ea4335;
       margin-right: 1rem; }
 
 .info-section {
-  margin: 3rem  5rem;
+  margin: 3rem 5rem;
   padding: 7rem; }
 
 @media only screen and (max-width: 760px) {
   .info-section {
-    margin: 0; }
+    margin: 0;
+    padding: 3rem; }
     .info-section .info-container {
       margin: 0;
       padding: 0;
-      text-align: center; }
+      flex-flow: column; }
       .info-section .info-container .info__video {
-        margin: 0 auto; }
+        margin-bottom: 2rem; }
       .info-section .info-container .details {
-        position: relative;
-        margin: 2rem 0;
-        left: 0;
-        top: 0;
-        height: auto;
-        width: 90%;
-        padding: 2rem; } }
+        width: 100%; }
+  .tech-section {
+    margin: 3rem 0;
+    margin-bottom: 0;
+    padding: 5rem 3rem; }
+    .tech-section .tech-heading {
+      top: -2rem;
+      left: 3rem; } }
 
 @media only screen and (max-width: 1200px) {
   .info-section {
-    margin: 0; }
+    margin: 0;
+    padding: 5rem; }
     .info-section .info-container {
       margin: 0;
-      padding: 0;
-      text-align: center; }
+      padding: 0; }
       .info-section .info-container .info__video {
-        margin: 0 auto; }
+        margin-right: 3rem; }
       .info-section .info-container .details {
-        position: relative;
-        margin: 2rem 0;
-        left: 0;
-        top: 0;
-        height: auto;
-        width: 90%;
         padding: 2rem; } }
 
 .events-heading {
@@ -1440,6 +1430,10 @@ p {
     background-color: orangered;
     left: 0;
     top: 0; }
+
+@media only screen and (max-width: 760px) {
+  .section-faq .faq-container {
+    margin: 3rem 5rem; } }
 
 .section-slack {
   text-align: center; }
